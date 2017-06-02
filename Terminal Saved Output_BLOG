@@ -1,0 +1,192 @@
+Last login: Fri May 19 15:00:50 on ttys000
+Stephanies-MacBook-Air:~ stephjordan$ cd desktop/test
+Stephanies-MacBook-Air:test stephjordan$ python3 obamaicon.py
+Stephanies-MacBook-Air:test stephjordan$ source myvenv/bin/activate
+-bash: myvenv/bin/activate: No such file or directory
+Stephanies-MacBook-Air:test stephjordan$ mkdir djangogirls
+Stephanies-MacBook-Air:test stephjordan$ cd djangogirls
+Stephanies-MacBook-Air:djangogirls stephjordan$ python3 -m venv myvenv
+Stephanies-MacBook-Air:djangogirls stephjordan$ pip install django
+Requirement already satisfied: django in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages
+Requirement already satisfied: pytz in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (from django)
+Stephanies-MacBook-Air:djangogirls stephjordan$ python3 -m venv myvenv
+Stephanies-MacBook-Air:djangogirls stephjordan$ python3 -m venv stephvenv
+Stephanies-MacBook-Air:djangogirls stephjordan$ ls
+myvenv		stephvenv
+Stephanies-MacBook-Air:djangogirls stephjordan$ ls stephenv
+ls: stephenv: No such file or directory
+Stephanies-MacBook-Air:djangogirls stephjordan$ ls myvenv
+bin		include		lib		pyvenv.cfg
+Stephanies-MacBook-Air:djangogirls stephjordan$ pip install --upgrade pip
+Requirement already up-to-date: pip in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages
+Stephanies-MacBook-Air:djangogirls stephjordan$ source myvenv/bin/activate
+(myvenv) Stephanies-MacBook-Air:djangogirls stephjordan$ django-admin.py
+
+Type 'django-admin.py help <subcommand>' for help on a specific subcommand.
+
+Available subcommands:
+
+[django]
+    check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    flush
+    inspectdb
+    loaddata
+    makemessages
+    makemigrations
+    migrate
+    runserver
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+Note that only Django core commands are listed as settings are not properly configured (error: Requested setting INSTALLED_APPS, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.).
+(myvenv) Stephanies-MacBook-Air:djangogirls stephjordan$ mysite/settings.py
+-bash: mysite/settings.py: No such file or directory
+(myvenv) Stephanies-MacBook-Air:djangogirls stephjordan$ django-admin.py startproject mysite .
+(myvenv) Stephanies-MacBook-Air:djangogirls stephjordan$ django-admin.py
+
+Type 'django-admin.py help <subcommand>' for help on a specific subcommand.
+
+Available subcommands:
+
+[django]
+    check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    flush
+    inspectdb
+    loaddata
+    makemessages
+    makemigrations
+    migrate
+    runserver
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+Note that only Django core commands are listed as settings are not properly configured (error: Requested setting INSTALLED_APPS, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.).
+(myvenv) Stephanies-MacBook-Air:djangogirls stephjordan$ mysite/settings.py
+-bash: mysite/settings.py: Permission denied
+(myvenv) Stephanies-MacBook-Air:djangogirls stephjordan$ django-admin startproject mysite .
+CommandError: /Users/stephjordan/Desktop/test/djangogirls/manage.py already exists, overlaying a project or app into an existing directory won't replace conflicting files
+(myvenv) Stephanies-MacBook-Air:djangogirls stephjordan$ mysite/settings.py
+-bash: mysite/settings.py: Permission denied
+(myvenv) Stephanies-MacBook-Air:djangogirls stephjordan$ python3 manage.py migrate
+Traceback (most recent call last):
+  File "manage.py", line 8, in <module>
+    from django.core.management import execute_from_command_line
+ImportError: No module named 'django'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "manage.py", line 14, in <module>
+    import django
+ImportError: No module named 'django'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "manage.py", line 17, in <module>
+    "Couldn't import Django. Are you sure it's installed and "
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+(myvenv) Stephanies-MacBook-Air:djangogirls stephjordan$ python3 manage.py migrate
+Traceback (most recent call last):
+  File "manage.py", line 8, in <module>
+    from django.core.management import execute_from_command_line
+ImportError: No module named 'django'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "manage.py", line 14, in <module>
+    import django
+ImportError: No module named 'django'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "manage.py", line 17, in <module>
+    "Couldn't import Django. Are you sure it's installed and "
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+(myvenv) Stephanies-MacBook-Air:djangogirls stephjordan$ python3 manage.py migrate
+Traceback (most recent call last):
+  File "manage.py", line 8, in <module>
+    from django.core.management import execute_from_command_line
+ImportError: No module named 'django'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "manage.py", line 14, in <module>
+    import django
+ImportError: No module named 'django'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "manage.py", line 17, in <module>
+    "Couldn't import Django. Are you sure it's installed and "
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+(myvenv) Stephanies-MacBook-Air:djangogirls stephjordan$ pip install django~=1.10.0
+Collecting django~=1.10.0
+  Using cached Django-1.10.7-py2.py3-none-any.whl
+Installing collected packages: django
+Successfully installed django-1.10.7
+You are using pip version 7.1.2, however version 9.0.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+(myvenv) Stephanies-MacBook-Air:djangogirls stephjordan$ python3 manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying sessions.0001_initial... OK
+(myvenv) Stephanies-MacBook-Air:djangogirls stephjordan$ python3 manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 19, 2017 - 15:40:19
+Django version 1.10.7, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[19/May/2017 15:40:48] "GET / HTTP/1.1" 200 1767
+Not Found: /favicon.ico
+[19/May/2017 15:40:48] "GET /favicon.ico HTTP/1.1" 404 1936
+^C(myvenv) Stephanies-MacBook-Air:djangogirls stephjordan$ python3 manage.py startapp blog
+Unknown command: 'ststartapp'
+Type 'manage.py help' for usage.
+(myvenv) Stephanies-MacBook-Air:djangogirls stephjordan$ python3 manage.py startapp blog
+(myvenv) Stephanies-MacBook-Air:djangogirls stephjordan$ 
